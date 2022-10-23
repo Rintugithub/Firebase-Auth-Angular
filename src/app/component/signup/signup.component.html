@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col">
+      <div class="col-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <h4>Signup</h4>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" [(ngModel)]="email" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" name="password" id="exampleInputEmail1" [(ngModel)]="password"  aria-describedby="emailHelp"
+                  placeholder="Enter password">
+              </div>
+              <button type="button" (click)="signup()" class="btn btn-success text-center">Signup</button>
+              <div class="row">
+                <div class="col-12">
+        <a class="text-dark" [routerLink]="['/login']" style="text-decoration:none ;">Already have an account?<span class="text-primary">Login</span></a>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
